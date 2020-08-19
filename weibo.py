@@ -305,13 +305,18 @@ class WeiboMonitor(object):
 
 
 if __name__ == "__main__":
-    weibo_cookie = 'SINAGLOBAL=145115770020.08334.1583853180190; _ga=GA1.2.1499545332.1595335387; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W59gpUx7J95bnd.nqv0.YX65JpX5KMhUgL.FoqXeheNeoeReK22dJLoIpqLxK-LBo5L12qLxK-L1hqLBo57eK27; wvr=6; Ugrow-G0=cf25a00b541269674d0feadd72dce35f; SCF=AihX-pk38G5GHABLBeZy8XRh1YaCOoyCexlbDgFqQ31uiRJNI5WAkGAnXiiNdjG7piH8CeyRBClkzh-77j9V_Mg.; SUB=_2A25yMku8DeRhGeBK61EW8i3Eyj2IHXVRRjp0rDV8PUNbmtAKLUT2kW9NRBbA6lZTe-_XNNOGY1P0g5J-9gQlClXt; SUHB=0auAf0xakrv4sE; ALF=1628925802; SSOLoginState=1597389804; _s_tentry=-; Apache=7420116626448.4.1597389815265; ULV=1597389815271:290:20:10:7420116626448.4.1597389815265:1597375766978; UOR=login.sina.com.cn,weibo.com,www.google.com; TC-V5-G0=4de7df00d4dc12eb0897c97413797808; wb_view_log_6403723811=1536*8641.25; TC-Page-G0=7e0e6b57abe2c2f76f677abd9a9ed65d|1597393821|1597393821; webim_unReadCount=%7B%22time%22%3A1597393834554%2C%22dm_pub_total%22%3A0%2C%22chat_group_client%22%3A0%2C%22chat_group_notice%22%3A0%2C%22allcountNum%22%3A1%2C%22msgbox%22%3A0%7D'
-    email_account = "xiaobingbao2020@163.com"
-    email_password = "JEDELUWBHNGLXFWD"
-    period = 10
+    # 微博Cookie
+    weibo_cookie = ''
+    # 邮箱的账号和密码（授权码）
+    email_account = ""
+    email_password = ""
+    # 爬取周期
+    period = 600
+    # 博主数字ID
+    weibo_id = 0
+    # 邮件收件人
+    receiver = ""
 
-    weibo_id = 3561024931
-    receiver = "614610321@qq.com"
     wm = WeiboMonitor(weibo_id, weibo_cookie, email_account, email_password, receiver, period)
     wm.start()
 
