@@ -3,6 +3,6 @@
 
 主文件为"weibo.py"，在下方`if __name__ == "__main__":`中设置参数即可。"my_email.py"是用来发送邮件的，需和"weibo.py"放在同一个文件夹中。
 
-代码中有较为详尽的注释，时间过程中的难点都放在了博客中：https://www.chenbb.top/archives/368/
+代码中有较为详尽的注释，实践过程中的难点都放在了博客中：https://www.chenbb.top/archives/368/
 
 初次写爬虫，还有很多不完善的地方，不喜勿喷。
